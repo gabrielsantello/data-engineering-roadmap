@@ -1,11 +1,9 @@
-# CLASS 01
-
-## Project Name: Bootcamp
+# Python Basics
 
 ![Python Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/300px-Python-logo-notext.svg.png)
 
 ### Description
-The **Awesome Python Toolbox** is a collection of handy Python utilities and examples. Whether you're a beginner or an experienced developer, this project aims to simplify your Python journey.
+It's a collection of handy Python utilities and examples. Whether you're a beginner or an experienced developer, this project aims to simplify your Python journey.
 
 ### Table of Contents
 1. [Installation](#installation)
@@ -68,16 +66,9 @@ Here are some examples of how to use the Awesome Python Toolbox:
    """
    ```
 
----
+Happy coding! 🐍🚀.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to customize this README to suit your project. Happy coding! 🐍🚀.
-
-Source: Conversation with Bing, 21/02/2024
+Source:
 (1) Making a PyPI-friendly README - Python Packaging User Guide. https://packaging.python.org/en/latest/guides/making-a-pypi-friendly-readme/.
 (2) Make a README. https://www.makeareadme.com/.
 (3) How to Write a Good README File for Your GitHub Project. https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/.

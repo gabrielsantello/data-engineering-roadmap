@@ -52,8 +52,7 @@ Python provides mechanisms to handle errors gracefully:
 
 Happy coding! 🐍🚀
 
-Source: Conversation with Bing, 21/02/2024
-(1) Google Translate. https://translate.google.com.br/?hl=en.
-(2) Python Variables Declaration - DZone. https://dzone.com/articles/python-variables-declaration.
-(3) Variables in Python – Real Python. https://realpython.com/python-variables/.
-(4) Python Variables – The Complete Beginner's Guide - freeCodeCamp.org. https://www.freecodecamp.org/news/python-variables/.
+Source:
+(1) Python Variables Declaration - DZone. https://dzone.com/articles/python-variables-declaration.
+(2) Variables in Python – Real Python. https://realpython.com/python-variables/.
+(3) Python Variables – The Complete Beginner's Guide - freeCodeCamp.org. https://www.freecodecamp.org/news/python-variables/.
