@@ -8,10 +8,16 @@ This README provides an overview of essential concepts related to ETL (Extract, 
 
 3. **Decorators with Loguru**: Discover how decorators can enhance your logging experience when combined with Loguru.
 
+4. **Pydantic**: A data validation and parsing library for Python. It simplifies data validation and serialization/deserialization.
+
+5. **Pandera**: A lightweight data validation library that works well with Pandas DataFrames.
+
 ## Table of Contents
 1. [ETL with Pandas, JSON, and Parquet](#etl-with-pandas-json-and-parquet)
 2. [Loguru: A Logging Solution](#loguru-a-logging-solution)
 3. [Benefits of Using Decorators with Loguru](#benefits-of-using-decorators-with-loguru)
+4. [Data Validation with Pydantic](#data-validation-with-pydantic)
+5. [Data Validation with Pandera](#data-validation-with-pandera)
 
 ---
 
@@ -30,6 +36,40 @@ This README provides an overview of essential concepts related to ETL (Extract, 
 - **Decorators**: Python functions that modify the behavior of other functions or methods.
 - When combined with Loguru, decorators can enhance error tracebacks and provide better insights during debugging.
 - Use decorators to catch exceptions, time function execution, or customize log messages.
+
+## 4. Data Validation with Pydantic
+- **Pydantic**: A powerful library for data validation and parsing. It allows you to define data models with type hints and validation rules. Use Pydantic to validate input data, serialize/deserialize JSON, and ensure data consistency.
+
+Example:
+```python
+from pydantic import BaseModel
+
+class User(BaseModel):
+    username: str
+    email: str
+
+user_data = {"username": "john_doe", "email": "john@example.com"}
+user = User(**user_data)
+print(user)
+```
+
+## 5. Data Validation with Pandera
+- **Pandera**: A lightweight data validation library that integrates well with Pandas DataFrames. It allows you to define schema rules for your data and validate DataFrame columns.
+
+Example:
+```python
+import pandas as pd
+import pandera as pa
+
+schema = pa.DataFrameSchema({
+    "name": pa.Column(pa.String),
+    "age": pa.Column(pa.Int, checks=pa.Check.greater_than(0)),
+})
+
+data = pd.DataFrame({"name": ["Alice", "Bob"], "age": [25, -10]})
+validated_data = schema.validate(data)
+print(validated_data)
+```
 
 Happy coding! 🚀🐍
 
